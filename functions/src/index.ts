@@ -4,7 +4,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-export const sendHelloEvery5Minutes = functions.pubsub
+export const startSchedulePadel = functions.pubsub
   .schedule("every 60 minutes")
   .timeZone("Europe/Amsterdam")
   .onRun(async () => {
